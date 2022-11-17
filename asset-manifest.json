@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/christmas/static/css/main.39fd4dcc.css",
+    "main.js": "/christmas/static/js/main.642e05c5.js",
+    "static/js/787.7c105921.chunk.js": "/christmas/static/js/787.7c105921.chunk.js",
+    "static/media/cash.gif": "/christmas/static/media/cash.26f47b539674be750a02.gif",
+    "static/media/fresh.jpg": "/christmas/static/media/fresh.4dcc98e14e5e86fd4646.jpg",
+    "static/media/browser.png": "/christmas/static/media/browser.d10d6f8f4233e876f7b8.png",
+    "static/media/header.png": "/christmas/static/media/header.0bb441adddaa865bc1c2.png",
+    "static/media/mj.gif": "/christmas/static/media/mj.b5cad12b20435475208c.gif",
+    "static/media/fire.jpeg": "/christmas/static/media/fire.1576179162b76c5d12d5.jpeg",
+    "static/media/me.jpg": "/christmas/static/media/me.7727f0d73508fd1080b2.jpg",
+    "index.html": "/christmas/index.html",
+    "main.39fd4dcc.css.map": "/christmas/static/css/main.39fd4dcc.css.map",
+    "main.642e05c5.js.map": "/christmas/static/js/main.642e05c5.js.map",
+    "787.7c105921.chunk.js.map": "/christmas/static/js/787.7c105921.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.39fd4dcc.css",
+    "static/js/main.642e05c5.js"
+  ]
+}

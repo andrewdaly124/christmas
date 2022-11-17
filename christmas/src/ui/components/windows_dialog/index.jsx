@@ -5,6 +5,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { setWindowOpen } from "../../../store/actions";
 import { getPageName, getWindowOpen } from "../../../store/selectors";
 import generateNewRandomQueue from "../../../utils/generate_new_random_queue.js";
+import brokenMessage from "../../assets/data/broken_message.json";
 import general from "../../assets/data/general.json";
 import quotes from "../../assets/data/quotes.json";
 import vinyls from "../../assets/data/vinyls.json";
@@ -31,12 +32,14 @@ export default function WindowsDialog() {
   }, [refreshQuotesArr]);
 
   const activeQuote = useMemo(() => {
+    let quote = "";
     if (quotesIndex < orderedQuotesArr.length) {
       return quotesArr[orderedQuotesArr[quotesIndex]];
+    } else {
+      setRefreshQuotesArr(!refreshQuotesArr);
+      setQuotesIndex(1);
+      return quotesArr[orderedQuotesArr[0]];
     }
-    setRefreshQuotesArr(!refreshQuotesArr);
-    setQuotesIndex(1);
-    return quotesArr[orderedQuotesArr[0]];
   }, [quotesIndex]);
 
   useEffect(() => {
@@ -66,7 +69,7 @@ export default function WindowsDialog() {
         <>
           <h4>Quote of the day</h4>
           <br />
-          <h4>"{activeQuote}"</h4>
+          <h4>"{activeQuote || brokenMessage.message.toUpperCase()}"</h4>
           <br />
           <img src={andrewSrc} alt="" />
         </>

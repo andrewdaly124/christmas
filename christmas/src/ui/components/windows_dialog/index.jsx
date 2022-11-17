@@ -13,10 +13,9 @@ import styles from "./index.module.scss";
 
 export default function WindowsDialog() {
   const { quotes: quotesArr } = quotes;
+  const { general: generalArr } = general;
   const { vinyls: vinylsArr } = vinyls;
   vinylsArr.sort();
-  const { general: generalArr } = general;
-  generalArr.sort();
 
   const [transparent, setTransparent] = useState(true);
   const [title, setTitle] = useState("Untitled - Notepad");

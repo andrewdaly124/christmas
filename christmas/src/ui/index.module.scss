@@ -1,0 +1,79 @@
+@import "./palette.module.scss";
+
+// Ride with me playing in the background
+
+.ui {
+  position: fixed;
+  padding: 0;
+  margin: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  user-select: none;
+  overflow: auto;
+
+  color: $PRIMARY;
+
+  background-image: url("./assets/img/fire.jpeg");
+  background-repeat: repeat;
+  background-attachment: fixed;
+
+  * {
+    font-family: "Trade Winds", cursive;
+  }
+
+  .mj {
+    position: fixed;
+    padding: 0;
+    margin: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("./assets/img/mj.gif");
+    background-repeat: repeat;
+    background-attachment: fixed;
+    z-index: -1;
+  }
+
+  .cash {
+    position: fixed;
+    padding: 0;
+    margin: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("./assets/img/cash.gif");
+    background-repeat: repeat;
+    background-attachment: scroll;
+    z-index: -1;
+  }
+
+  .uiBody {
+    margin: 5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1em;
+
+    .header {
+      width: 100%;
+    }
+
+    .andrew {
+      height: 10rem;
+      border: 1em solid greenyellow;
+
+      &:hover {
+        border: 1em solid red;
+      }
+
+      &:active {
+        filter: invert(100%);
+      }
+    }
+  }
+}

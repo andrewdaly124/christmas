@@ -105,6 +105,8 @@ export default function WindowsDialog() {
               <a href={item[1]} key={i}>
                 <h6>{item[0]}</h6>
               </a>
+            ) : item[0] === "__divider" ? (
+              <br />
             ) : (
               <h6 key={i}>{item[0]}</h6>
             );

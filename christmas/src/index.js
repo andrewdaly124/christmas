@@ -7,13 +7,13 @@ import reportWebVitals from "./reportWebVitals";
 import store from "./store";
 import Ui from "./ui";
 
-ReactDOM.render(
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(
   <React.StrictMode>
     <Provider store={store}>
       <Ui />
     </Provider>
-  </React.StrictMode>,
-  document.getElementById("root")
+  </React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function
